@@ -94,7 +94,7 @@ public class NativeAudio extends CordovaPlugin implements AudioManager.OnAudioFo
 
 				return new PluginResult(Status.OK);
 			} else {
-				return new PluginResult(Status.ERROR, ERROR_AUDIOID_EXISTS);
+				return new PluginResult(Status.OK);
 			}
 		} catch (JSONException e) {
 			return new PluginResult(Status.ERROR, e.toString());
